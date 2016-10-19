@@ -3,6 +3,7 @@ var list = document.querySelector('.tasks');
 var all = document.querySelector('#all');
 var current = document.querySelector('#current')
 var done = document.querySelector('#done');
+var button = document.querySelector('button');
 
 taskinfo.addEventListener('keyup', function(event) {
 	var listItem;
@@ -55,3 +56,7 @@ done.addEventListener('click', function() {
 	}
 });
 
+button.addEventListener('click', function () {
+	listItems.parentElement.removeChild(listItems);
+	}
+});
