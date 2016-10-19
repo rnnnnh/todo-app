@@ -67,8 +67,14 @@ li {
 	/*width: 20.9em;*/
 }
 
-.tasks li.complete {
-	text-decoration: line-through;
+.tasks li.complete::before {
+	/*text-decoration: line-through;*/
+	content: '';
+    border-bottom: 2px solid #0033cc;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
 }
 /*border-bottom needs to be invisible if there are no tasks*/
 
