@@ -64,13 +64,12 @@ li {
 	font-family: "Space Mono", monospace;
 	line-height: 2.5em;
 	border-bottom: solid 2px black;
-	/*width: 20.9em;*/
+	position: relative;
 }
 
 .tasks li.complete::before {
-	/*text-decoration: line-through;*/
 	content: '';
-    border-bottom: 2px solid #0033cc;
+    border-bottom: 3px solid #0033cc;
     width: 100%;
     position: absolute;
     right: 0;
