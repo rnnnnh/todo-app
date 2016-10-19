@@ -1,0 +1,95 @@
+/*--------UNIVERSAL-STYLES--------*/
+*, *:before, *:after {
+        box-sizing: border-box;
+        font-family: serif;
+}
+
+@font-face {
+	font-family: "Space Mono";
+	src: url(assets/Space_Mono/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Space Mono Italic";
+	src: url(assets/Space_Mono/SpaceMono-Italic.ttf);
+}
+
+@font-face {
+	font-family: "Space Mono Bold";
+	src: url(assets/Space_Mono/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Space Mono Bold Italic";
+	src: url(assets/Space_Mono/SpaceMono-BoldItalic.ttf);
+}
+
+body {
+	background-color: #f2f2f2;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 2em 25em 0 25em;
+}
+
+h2 {
+	font-family: "Space Mono", monospace;
+	/*padding: 15em 25em;*/
+	display: inline-block;
+	font-size: 2.7em;
+	margin-bottom: .3em;
+}
+
+input[type=text] {
+	display: block;
+	border-color: black;
+	border-width: 2px;
+	padding: 1em;
+	width: 100%;
+	margin: 0 auto;
+	font-family: "Space Mono", monospace;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	font-size: 1.2em;
+}
+
+.tasks li {
+	font-family: "Space Mono", monospace;
+	line-height: 2.5em;
+	border-bottom: solid 2px black;
+	/*width: 20.9em;*/
+}
+
+/*.tasks li:hover {
+	text-decoration: line-through;
+} */
+
+.filter-menu {
+	border-bottom: solid 2px black;
+}
+
+.filter-menu li {
+	display: inline-block;
+}
+
+.filter-menu a {
+	text-decoration: none;
+	font-family: "Space Mono Italic", monospace;
+	color: black;
+	margin: 0 2.5em;
+}
+
+.filter-menu a:first-child {
+	margin-left: 0; 
+}
+
+.filter-menu a:hover {
+	font-family: "Space Mono Bold Italic", monospace;
+}
