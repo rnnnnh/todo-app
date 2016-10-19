@@ -25,7 +25,7 @@
 }
 
 body {
-	background-color: #f2f2f2;
+	background-color: #fff;
 }
 
 .wrapper {
@@ -63,9 +63,11 @@ li {
 .tasks li {
 	font-family: "Space Mono", monospace;
 	line-height: 2.5em;
-	border-bottom: solid 2px black;
+	/*border-bottom: solid 2px black;*/
 	/*width: 20.9em;*/
 }
+
+/*border-bottom needs to be invisible if there are no tasks*/
 
 /*.tasks li:hover {
 	text-decoration: line-through;
