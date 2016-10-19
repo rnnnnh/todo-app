@@ -22,7 +22,7 @@ var listItems;
 all.addEventListener('click', function () {
 	// show every list item 
 	// every list item should be display: block
-	listItems = document.querySelectorAll('li');
+	listItems = list.querySelectorAll('li');
 	for (var i = 0; i < listItems.length; i++) {
 		 listItems[i].style.display = 'block';
 	}
@@ -32,7 +32,7 @@ current.addEventListener('click', function() {
 	// hide complete list items
 	// incomplete list items should be display: block
 	// complete list items should be display: none
-	listItems = document.querySelector('li');
+	listItems = list.querySelectorAll('li');
 	for (var i = 0; i < listItems.length; i++) {
 		if (!listItems[i].classList.contains('complete')) {
 			listItems[i].style.display = 'block'; 
