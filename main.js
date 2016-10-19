@@ -1,5 +1,5 @@
 var taskinfo = document.querySelector('input');
-var list = document.querySelector('.filter-menu');
+var list = document.querySelector('.tasks');
 var all = document.querySelector('#all');
 var current = document.querySelector('#current')
 var done = document.querySelector('#done');
