@@ -57,6 +57,4 @@ done.addEventListener('click', function() {
 });
 
 button.addEventListener('click', function () {
-	listItems.parentElement.removeChild(listItems);
-	}
-});
+
