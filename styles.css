@@ -63,10 +63,13 @@ li {
 .tasks li {
 	font-family: "Space Mono", monospace;
 	line-height: 2.5em;
-	/*border-bottom: solid 2px black;*/
+	border-bottom: solid 2px black;
 	/*width: 20.9em;*/
 }
 
+.tasks li.complete {
+	text-decoration: line-through;
+}
 /*border-bottom needs to be invisible if there are no tasks*/
 
 /*.tasks li:hover {
