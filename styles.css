@@ -24,18 +24,21 @@
 	src: url(assets/Space_Mono/SpaceMono-BoldItalic.ttf);
 }
 
+/*------BODY-STYLES------*/
+
 body {
 	background-color: #fff;
 }
 
 .wrapper {
 	margin: 0 auto;
-	padding: 2em 25em 0 25em;
+	padding-top: 2%;
+	padding-left: 25%;
+	padding-right: 25%;
 }
 
 h2 {
 	font-family: "Space Mono", monospace;
-	/*padding: 15em 25em;*/
 	display: inline-block;
 	font-size: 2.7em;
 	margin-bottom: .3em;
@@ -75,11 +78,12 @@ li {
     right: 0;
     top: 50%;
 }
-/*border-bottom needs to be invisible if there are no tasks*/
 
-/*.tasks li:hover {
-	text-decoration: line-through;
-} */
+.tasks button {
+	width: 20px;
+	height: 20px;
+	border: solid black 2px;
+}
 
 .filter-menu {
 	border-bottom: solid 2px black;
