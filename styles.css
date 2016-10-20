@@ -118,7 +118,7 @@ li {
 	font-family: "Space Mono Bold Italic", monospace;
 }
 
-.filter-menu a:active {
+.filter-menu a.active {
 	font-family: "Space Mono Bold Italic", monospace;	
 }
 
