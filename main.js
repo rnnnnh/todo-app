@@ -9,6 +9,9 @@ var counter = document.querySelector('.counter-count');
 taskinfo.addEventListener('keyup', function(event) {
 	var listItem;
 	if (event.keyCode === 13) {
+		if (taskinfo.value === "") {
+			return;
+		}
 		// every time the user adds a todo item, add one to the counter element ('.counter-count')
 		listItem = document.createElement('li'); // create a list item: ('li')
 		listItem.addEventListener('click', function () {
@@ -26,6 +29,7 @@ taskinfo.addEventListener('keyup', function(event) {
 			listItem.parentElement.removeChild(listItem);
 			updateCounter();
 		});
+		
 	}
 });
 
