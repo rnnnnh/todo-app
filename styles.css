@@ -80,9 +80,16 @@ li {
 }
 
 .tasks button {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
+	line-height: .03em;
 	border: solid black 2px;
+	background-color: #fff;
+	margin-left: 5px;
+	font-family: "Space Mono", monospace;
+	display: inline-block;
+	vertical-align: middle;
+
 }
 
 .filter-menu {
@@ -106,4 +113,18 @@ li {
 
 .filter-menu a:hover {
 	font-family: "Space Mono Bold Italic", monospace;
+}
+
+.filter-menu a:active {
+	font-family: "Space Mono Bold Italic", monospace;	
+}
+
+.counter {
+	font-family: "Space Mono Bold", monospace;
+	margin: 0 2.5em;
+}
+
+.counter span {
+	font-family: "Space Mono Italic", monospace;
+	text-align: right;
 }
