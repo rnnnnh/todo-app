@@ -56,5 +56,8 @@ done.addEventListener('click', function() {
 	}
 });
 
-button.addEventListener('click', function () {
+// button.addEventListener('click', function () {
+// 	listItems = document.createElement('li'); // created a new list item
+	
+// });
 
