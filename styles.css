@@ -24,18 +24,22 @@
 	src: url(assets/Space_Mono/SpaceMono-BoldItalic.ttf);
 }
 
+/*------BODY-STYLES------*/
+
 body {
 	background-color: #fff;
 }
 
 .wrapper {
 	margin: 0 auto;
-	padding: 2em 25em 0 25em;
+	padding-top: 2%;
+	padding-left: 25%;
+	padding-right: 25%;
 }
 
 h2 {
 	font-family: "Space Mono", monospace;
-	/*padding: 15em 25em;*/
+	font-weight: normal;
 	display: inline-block;
 	font-size: 2.7em;
 	margin-bottom: .3em;
@@ -75,11 +79,23 @@ li {
     right: 0;
     top: 50%;
 }
-/*border-bottom needs to be invisible if there are no tasks*/
 
-/*.tasks li:hover {
-	text-decoration: line-through;
-} */
+.tasks button {
+	width: 30px;
+	height: 30px;
+	line-height: .03em;
+	border: solid black 2px;
+	background-color: #fff;
+	margin: 10px;
+	margin-right: 0;
+	font-family: "Space Mono", monospace;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	float: right;
+
+}
 
 .filter-menu {
 	border-bottom: solid 2px black;
@@ -102,4 +118,22 @@ li {
 
 .filter-menu a:hover {
 	font-family: "Space Mono Bold Italic", monospace;
+}
+
+.filter-menu a.active {
+	font-family: "Space Mono Bold Italic", monospace;	
+}
+
+.counter {
+	font-family: "Space Mono Bold", monospace;
+}
+
+.counter-count {
+	font-family: "Space Mono Bold", monospace;
+	margin-right: .5em;
+}
+
+.tasks-counter {
+	font-family: "Space Mono Italic", monospace;
+	text-align: right;
 }
