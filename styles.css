@@ -86,12 +86,14 @@ li {
 	line-height: .03em;
 	border: solid black 2px;
 	background-color: #fff;
-	margin-left: 5px;
+	margin: 10px;
+	margin-right: 0;
 	font-family: "Space Mono", monospace;
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;
 	z-index: 1;
+	float: right;
 
 }
 
@@ -127,7 +129,12 @@ li {
 	margin: 0 2.5em;
 }
 
-.counter span {
+.counter-count {
+	font-family: "Space Mono Bold", monospace;
+	margin: 0 .5em;
+}
+
+.tasks-counter {
 	font-family: "Space Mono Italic", monospace;
 	text-align: right;
 }
