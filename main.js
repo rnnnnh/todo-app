@@ -17,17 +17,21 @@ taskinfo.addEventListener('keyup', function(event) {
 		listItem.textContent = taskinfo.value; // add the value of the input to the list item
 		list.appendChild(listItem); // grabs the list item that was created and appends it to the list
 		taskinfo.value = ''; // emptys the input value with an empty string
-		counter.textContent = list.children.length;
+		updateCounter();
 		button = document.createElement('button');
 		listItem.appendChild(button);
 		button.textContent = 'x';
 		button.addEventListener('click', function (e) {
 			e.stopPropagation();
 			listItem.parentElement.removeChild(listItem);
-			counter.textContent = list.children.length; 
+			updateCounter();
 		});
 	}
 });
+
+function updateCounter () {
+	counter.textContent = list.children.length;
+}
 
 var listItems;
 
