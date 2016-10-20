@@ -4,10 +4,12 @@ var all = document.querySelector('#all');
 var current = document.querySelector('#current')
 var done = document.querySelector('#done');
 var button = document.querySelector('button');
+var counter = document.querySelector('.counter-count');
 
 taskinfo.addEventListener('keyup', function(event) {
 	var listItem;
 	if (event.keyCode === 13) {
+		// every time the user adds a todo item, add one to the counter element ('.counter-count')
 		listItem = document.createElement('li'); // create a list item: ('li')
 		listItem.addEventListener('click', function () {
 			listItem.classList.toggle('complete');
@@ -15,6 +17,14 @@ taskinfo.addEventListener('keyup', function(event) {
 		listItem.textContent = taskinfo.value; // add the value of the input to the list item
 		list.appendChild(listItem); // grabs the list item that was created and appends it to the list
 		taskinfo.value = ''; // emptys the input value with an empty string
+		counter.textContent = list.children.length;
+		button = document.createElement('button');
+		listItem.appendChild(button);
+		button.textContent = 'x';
+		button.addEventListener('click', function (e) {
+			e.stopPropagation();
+			listItem.parentElement.removeChild(listItem);
+		});
 	}
 });
 
