@@ -31,6 +31,9 @@ taskinfo.addEventListener('keyup', function(event) {
 var listItems;
 
 all.addEventListener('click', function () {
+	all.classList.add('active');
+	current.classList.remove('active');
+	done.classList.remove('active');
 	// show every list item 
 	// every list item should be display: block
 	listItems = list.querySelectorAll('li');
@@ -40,6 +43,9 @@ all.addEventListener('click', function () {
 });
 
 current.addEventListener('click', function() {
+	current.classList.add('active');
+	all.classList.remove('active');
+	done.classList.remove('active');
 	// hide complete list items
 	// incomplete list items should be display: block
 	// complete list items should be display: none
@@ -54,6 +60,9 @@ current.addEventListener('click', function() {
 });
 
 done.addEventListener('click', function() {
+	done.classList.add('active');
+	all.classList.remove('active');
+	current.classList.remove('active');
 	// hide incomplete list items
 	// complete list items should be display: block
 	// incomplete list items should be display: none
