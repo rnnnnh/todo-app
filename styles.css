@@ -126,12 +126,11 @@ li {
 
 .counter {
 	font-family: "Space Mono Bold", monospace;
-	margin: 0 2.5em;
 }
 
 .counter-count {
 	font-family: "Space Mono Bold", monospace;
-	margin: 0 .5em;
+	margin-right: .5em;
 }
 
 .tasks-counter {
