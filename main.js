@@ -24,6 +24,7 @@ taskinfo.addEventListener('keyup', function(event) {
 		button.addEventListener('click', function (e) {
 			e.stopPropagation();
 			listItem.parentElement.removeChild(listItem);
+			counter.textContent = list.children.length; 
 		});
 	}
 });
